@@ -1,0 +1,78 @@
+.catalog-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 4%;
+    background-color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-img-wrapper {
+    width: 100%;
+    height: 220px;
+    background-color: #f5f5f5; /* Светло-серый фон под картинками, как на макете */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.catalog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Аккуратно заполняет область контейнера */
+}
+
+.catalog-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.catalog-content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.catalog-tirazh {
+    font-size: 13px;
+    color: #b5b5b5; /* Блеклый серый цвет для тиража */
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.catalog-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #8a8a8a;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Выравнивает ссылки по нижней линии */
+}
+
+.catalog-link {
+    font-size: 15px;
+    color: #6366f1; /* Фиолетовый оттенок ссылки "Подробнее" */
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.catalog-link:hover {
+    opacity: 0.7;
+}
+
+
